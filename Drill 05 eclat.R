@@ -11,5 +11,5 @@ itemFrequencyPlot(dataset, topN = 10)
 # Training Eclat on the dataset
 rules = eclat(data = dataset, parameter = list(support = 0.003, minlen = 2))
 
-# Visualising the results
+# Visualising the results here
 inspect(sort(rules, by = 'support')[1:10])
