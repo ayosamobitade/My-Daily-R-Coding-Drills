@@ -47,5 +47,5 @@ classifier = randomForest(x = training_set[-692],
 # Predicting the Test set results
 y_pred = predict(classifier, newdata = test_set[-692])
 
-# Making the Confusion Matrix
+## Making the Confusion Matrix
 cm = table(test_set[, 692], y_pred)
